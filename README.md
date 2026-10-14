@@ -8,7 +8,7 @@ The project is an independent initiative developing a plugin runtime for ARK's n
 
 On 14 October 2026, a real Epic Games client reported as version 361.8 connected to the public ASE native Linux dedicated server, version 361.7. The player entered `/ping` and confirmed `pong` in the game. Ordinary chat and reconnect activity were also observed.
 
-The current implementation passed **149 automated CTest checks**, including
+The current implementation passed **152 automated CTest checks**, including
 the new identity and lifecycle fixtures. These checks complement the real-client
 demonstration; broader lifecycle and multiplayer acceptance continues separately.
 
@@ -21,8 +21,18 @@ demonstration; broader lifecycle and multiplayer acceptance continues separately
 | Steam client acceptance | Next validation |
 | Reply separation between two players | Next validation |
 | Player name and opaque native ID through `/whoami` | Confirmed by the Epic player |
-| Plugin login event delivery | Observed during the real Epic login |
+| Plugin login and logout events | Observed during the real Epic session |
+| Cooperative plugin control | Pause/resume, reload and stop/start verified without server restart |
 | Broader logout/relogin behavior | Next validation |
+| New reply presentation inside chat | Awaiting client confirmation |
+
+## Plugin control milestone
+
+The cooperative oPing plugin completed **13 live operator requests**, including
+pause/resume, two reloads and stop/start. The game server process remained the
+same throughout those requests, and the plugin finished running. This validates
+the current managed plugin contract; arbitrary background-thread plugins and
+installation of new plugin IDs need separate work.
 
 ## Direction
 

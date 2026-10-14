@@ -18,13 +18,19 @@ Completion requires recorded client observations for each case, alongside the re
 - Document the lifetime of copied player information and invocation contexts.
 - Verify identity and lifecycle extensions in the game.
 
-These extensions are under development. Completion requires behavior verified with real sessions.
+Player name/native ID and typed login/logout have been observed with a real
+Epic player. Broader relogin, interrupted connections and Steam acceptance
+remain pending.
 
 ## 3. First useful administration plugin
 
-- Deliver operator controls to start, pause, resume and reload supported plugins.
+- Current milestone: status, pause/resume, two reloads and stop/start of the
+  cooperative oPing plugin verified in 13 real-server requests.
 - Stop callback admission and drain active work before releasing plugin code.
-- Validate plugin replacement without restarting the game server.
+- Server process unchanged across those requests; keep expanding failure and
+  extended-run acceptance before broadening the supported plugin contract.
+- Add installation/discovery of new plugin IDs and define a separate protocol
+  for plugins that own background workers.
 
 - Select one concrete need with a server operator.
 - Deliver a small plugin with predictable configuration and permissions.
