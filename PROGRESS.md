@@ -106,3 +106,19 @@ tested. The native item function can report success after partial delivery,
 so purchases and kit fulfillment remain disabled until quantity-specific
 receipts are verified. Persistent homes, cross-map chat, full world enumeration
 and permission-checked dino/structure/tribe mutations remain subsequent stages.
+
+## 14 October 2026 — beta guide and session-home recovery
+
+The beta announcement now includes all **20 current chat commands** and an
+attached guide with **88 pending acceptance cases**, expected results and a
+report template. It covers Epic/Steam, two-player privacy, reconnects, chat,
+catalogs, world queries, session homes and coordinated plugin transitions.
+See the [Discord announcement](https://discord.com/channels/1511110561331544085/1511127623432933497/1559970839938474014).
+
+Session Homes now recovers capacity from disconnected histories when a complete
+validated session list is available. Incomplete lists preserve points and
+cooldowns. Real-library regressions pass, and the updated plugin was reloaded
+on the live server without restarting the game process. In-game `/help` now
+lists the complete command inventory. The latest checks pass 156 CTests and
+214 SDK guardrails; documentation and these checks do not accept any of the
+pending client cases. The whole-server shutdown issue remains unresolved.

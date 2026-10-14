@@ -30,6 +30,9 @@ of market share, revenue or full API coverage.
 | Session invalidation regressions | Wrong token/epoch, nested calls and successor-session reads/sends rejected |
 | New game query/chat/home effects | Native startup and fixtures pass; real-client acceptance pending |
 | Shop/kit fulfillment | Disabled pending verified complete delivery |
+| Documented beta chat commands | 20 |
+| Documented client acceptance cases | 88 pending; guide published in Discord |
+| Session-home capacity recovery | Real-library regressions pass; hot reload confirmed |
 
 The real-client results currently cover one Epic player. Automated fixtures
 include separate command origins, but those fixtures do not replace a real
