@@ -8,7 +8,7 @@ The project is an independent initiative developing a plugin runtime for ARK's n
 
 On 14 October 2026, a real Epic Games client reported as version 361.8 connected to the public ASE native Linux dedicated server, version 361.7. The player entered `/ping` and confirmed `pong` in the game. Ordinary chat and reconnect activity were also observed.
 
-The current implementation passed **153 automated CTest checks**, including
+The current implementation passed **156 automated CTest checks**, including
 the new identity and lifecycle fixtures. These checks complement the real-client
 demonstration; broader lifecycle and multiplayer acceptance continues separately.
 
@@ -68,3 +68,20 @@ The project is currently a prototype. Full ArkApi feature parity, Windows plugin
 This repository contains the project presentation, public validation metrics
 and development progress. The implementation remains private as part of the
 project's commercial development.
+
+
+## Chat, session homes and world tools
+
+Six cooperative modules now run in the native server. The four new modules
+completed 32 operator requests covering start, status, pause/resume, reload and
+stop/start without changing the game process after the core upgrade.
+
+| Module | Implemented behavior | Acceptance boundary |
+| --- | --- | --- |
+| Shop/Kits | Configurable catalogs, plus a private transaction/receipt foundation | Purchases and fulfillment remain disabled until full delivery is verified |
+| Advanced Chat | Observed-session list, global messages and whispers with rate limits | Two real players and visible chat delivery pending; cross-map chat planned |
+| Session Homes | Save/list/delete session points and guarded movement of the requesting player | Points clear on reconnect/reload; real-client movement and durable identity pending |
+| World Tools | Current position, native tribe ID, mounted dino IDs and aimed structure ID | Client queries pending; world enumeration and domain mutations planned |
+
+The current build passes 156 CTests. These implementation and lifecycle checks
+complement real-client acceptance rather than replacing it.

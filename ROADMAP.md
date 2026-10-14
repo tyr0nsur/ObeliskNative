@@ -6,11 +6,11 @@ client acceptance and migration checks, rather than a whole-suite percentage.
 
 | Stage | Scope | Current position |
 | --- | --- | --- |
-| 1 | Commands and cooperative plugin management | Epic ping/identity confirmed; Essentials hot installation/control verified; new command UI, Steam and two-player checks pending |
+| 1 | Commands and cooperative plugin management | Epic ping/identity confirmed; Six modules active; managed lifecycle verified; command UI, Steam and two-player checks pending |
 | 2 | Accounts, permissions and economy | Offline roles/wallets tested; trusted live identity and administrative integration pending |
-| 3 | Shop, kits, sales and rewards | Requirements mapped; verified item delivery, receipts and anti-duplication checks required |
-| 4 | Homes, player tools, chat and announcements | Authoritative sessions, game-thread scheduling, positions and broadcasts required |
-| 5 | Dino, structure and tribe tools | Domain queries, ownership and individual decision hooks required |
+| 3 | Shop, kits, sales and rewards | Catalogs and private receipt state implemented; full-quantity delivery and live subject mapping pending |
+| 4 | Homes, player tools, chat and announcements | Session homes, whispers/global messages and scoped position bindings implemented; client acceptance, durable identity and cross-map scheduling pending |
+| 5 | Dino, structure and tribe tools | Mounted/aimed/native group ID queries implemented; client acceptance, enumeration, ownership and individual decision hooks pending |
 | 6 | Migration and pilot packaging | Inspect/dry-run implemented; reviewed import/source ports, clean stop and reproducible deployment pending |
 
 ## Client and lifecycle acceptance
