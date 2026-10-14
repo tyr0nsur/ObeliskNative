@@ -5,7 +5,7 @@ of market share, revenue or full API coverage.
 
 | Metric | Verified result |
 | --- | --- |
-| Current automated CTest cases | 156 passed / 156 total |
+| Current automated CTest cases | 158 passed / 158 total |
 | Earlier command prototype baseline | 147 passed / 147 total |
 | Real client platform tested | Epic Games |
 | Tested client / native server versions | 361.8 / 361.7 |
@@ -33,6 +33,9 @@ of market share, revenue or full API coverage.
 | Documented beta chat commands | 20 |
 | Documented client acceptance cases | 88 pending; guide published in Discord |
 | Session-home capacity recovery | Real-library regressions pass; hot reload confirmed |
+| ASE catalog snapshot | 157 entries; framework and potential duplicates distinguished |
+| Command authorization foundation | Private authority, revocation and expiry fixtures pass; live binding pending |
+| Item quantity verification foundation | Stack deltas and durable partial-result fixtures pass; native evidence pending |
 
 The real-client results currently cover one Epic player. Automated fixtures
 include separate command origins, but those fixtures do not replace a real

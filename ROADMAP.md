@@ -1,17 +1,23 @@
 # Roadmap
 
-Updated 14 October 2026. The goal is a suite with original implementations and
-familiar ASE server workflows. Each module closes through recorded behavior,
+Updated 14 October 2026. The goal is matching commands, results, permissions,
+limits and persistence of defined ASE plugin versions with original native Linux
+implementations, without incorporating their source. Each module closes through recorded behavior,
 client acceptance and migration checks, rather than a whole-suite percentage.
 
 | Stage | Scope | Current position |
 | --- | --- | --- |
 | 1 | Commands and cooperative plugin management | Epic ping/identity confirmed; Six modules active; managed lifecycle verified; command UI, Steam and two-player checks pending |
-| 2 | Accounts, permissions and economy | Offline roles/wallets tested; trusted live identity and administrative integration pending |
-| 3 | Shop, kits, sales and rewards | Catalogs and private receipt state implemented; full-quantity delivery and live subject mapping pending |
+| 2 | Accounts, permissions and economy | Offline roles/wallets and scoped authority decisions tested; trusted live identity and administrative integration pending |
+| 3 | Shop, kits, sales and rewards | Catalogs, receipt state and exact stack-delta verification tested; native complete evidence and live subject mapping pending |
 | 4 | Homes, player tools, chat and announcements | Session homes, whispers/global messages and scoped position bindings implemented; client acceptance, durable identity and cross-map scheduling pending |
 | 5 | Dino, structure and tribe tools | Mounted/aimed/native group ID queries implemented; client acceptance, enumeration, ownership and individual decision hooks pending |
 | 6 | Migration and pilot packaging | Inspect/dry-run implemented; reviewed import/source ports, clean stop and reproducible deployment pending |
+
+The dated research inventory tracks 157 catalog entries, including the framework
+and possible duplicates. Additional repository/forum references are separate.
+It does not close unlisted/private products or undocumented behavior. A plugin's
+presence in that inventory does not imply implemented or accepted parity.
 
 ## Client and lifecycle acceptance
 

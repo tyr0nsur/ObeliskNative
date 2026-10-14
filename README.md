@@ -8,7 +8,7 @@ The project is an independent initiative developing a plugin runtime for ARK's n
 
 On 14 October 2026, a real Epic Games client reported as version 361.8 connected to the public ASE native Linux dedicated server, version 361.7. The player entered `/ping` and confirmed `pong` in the game. Ordinary chat and reconnect activity were also observed.
 
-The current implementation passed **156 automated CTest checks**, including
+The current implementation passed **158 automated CTest checks**, including
 the new identity and lifecycle fixtures. These checks complement the real-client
 demonstration; broader lifecycle and multiplayer acceptance continues separately.
 
@@ -54,7 +54,7 @@ foundations are separate from live gameplay permissions, purchases or item grant
 
 ## Direction
 
-The goal is an original native Linux suite covering familiar ASE server workflows: permissions, economy, shop and kits, homes, chat, and dino/structure/tribe tools. Migration work will preserve operator data through inspected mappings and source ports. Each module advances through working behavior and recorded acceptance tests.
+The goal is an original native Linux suite matching observable ASE plugin workflows: permissions, economy, shop and kits, homes, chat, and dino/structure/tribe tools. Migration work will preserve operator data through inspected mappings and documented behavioral contracts. Each module advances through working behavior and recorded acceptance tests.
 
 The project is currently a prototype. Full ArkApi feature parity, Windows plugin binary compatibility and support across all ASE builds have not been established.
 
@@ -83,5 +83,5 @@ stop/start without changing the game process after the core upgrade.
 | Session Homes | Save/list/delete session points and guarded movement of the requesting player | Points clear on reconnect/reload; real-client movement and durable identity pending |
 | World Tools | Current position, native tribe ID, mounted dino IDs and aimed structure ID | Client queries pending; world enumeration and domain mutations planned |
 
-The current build passes 156 CTests. These implementation and lifecycle checks
+The current build passes 158 CTests. These implementation and lifecycle checks
 complement real-client acceptance rather than replacing it.

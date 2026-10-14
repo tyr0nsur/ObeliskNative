@@ -12,7 +12,7 @@ Tested combination:
 
 Ordinary chat and reconnect activity were also observed. These observations are tracked separately from the remaining session and multiplayer acceptance cases.
 
-The baseline prototype passed **147 CTest checks** before the newer identity and lifecycle extensions. The current build passes **156/156 CTest checks**, including the identity and lifecycle fixtures. Automated coverage includes plugin loading, command dispatch, reply context lifetime and related failure cases. The demonstrated in-game command/reply path does not replace the remaining multiplayer tests.
+The baseline prototype passed **147 CTest checks** before the newer identity and lifecycle extensions. The subsequent suite-module build passed **156/156 CTest checks**, including the identity and lifecycle fixtures. Automated coverage includes plugin loading, command dispatch, reply context lifetime and related failure cases. The demonstrated in-game command/reply path does not replace the remaining multiplayer tests.
 
 The Epic player subsequently confirmed the name and opaque native ID shown by
 `/whoami`, and the plugin received a login event during that real connection.
@@ -122,3 +122,26 @@ on the live server without restarting the game process. In-game `/help` now
 lists the complete command inventory. The latest checks pass 156 CTests and
 214 SDK guardrails; documentation and these checks do not accept any of the
 pending client cases. The whole-server shutdown issue remains unresolved.
+
+## 14 October 2026 — original gameplay parity foundations
+
+The target is matching observable ASE plugin behavior with original native Linux
+implementations. A dated inventory now tracks 157 public catalog entries across
+official, free and paid ASE categories. It distinguishes the framework,
+potential duplicate products and additional repository/forum references; it is
+not a census of every plugin or a claim of complete parity. Each reference has
+pending syntax, limits, persistence, presentation and client acceptance work.
+
+Private command authorization now requires an explicit trusted principal and
+current command scope, reads fresh permission decisions and rejects expiry or
+principal/configuration changes. Private delivery verification compares exact
+variant quantities and inventory stack increments; partial or unknown outcomes
+stay blocked without an automatic refund or second grant. Real database tests
+cover these boundaries. Neither foundation is connected to live authorization
+or shop/kit fulfillment yet.
+
+The current full build passes **158/158 CTests** and **214 SDK guardrails**.
+Focused identity and inventory research checked the actual native executable
+without enabling grants or claiming authenticated account correlation. The
+laboratory still runs six modules and 20 commands. Further parity requires
+verified native adapters and actual Steam/Epic gameplay acceptance.
