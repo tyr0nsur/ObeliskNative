@@ -12,7 +12,7 @@ Tested combination:
 
 Ordinary chat and reconnect activity were also observed. These observations are tracked separately from the remaining session and multiplayer acceptance cases.
 
-The baseline prototype passed **147 CTest checks** before the newer identity and lifecycle extensions. The current build passes **152/152 CTest checks**, including the identity and lifecycle fixtures. Automated coverage includes plugin loading, command dispatch, reply context lifetime and related failure cases. The demonstrated in-game command/reply path does not replace the remaining multiplayer tests.
+The baseline prototype passed **147 CTest checks** before the newer identity and lifecycle extensions. The current build passes **153/153 CTest checks**, including the identity and lifecycle fixtures. Automated coverage includes plugin loading, command dispatch, reply context lifetime and related failure cases. The demonstrated in-game command/reply path does not replace the remaining multiplayer tests.
 
 The Epic player subsequently confirmed the name and opaque native ID shown by
 `/whoami`, and the plugin received a login event during that real connection.
@@ -41,8 +41,8 @@ running at the end.
 
 The current contract requires managed-only cooperative plugins. It closes
 callback admission and drains active work and user-data cleanup before releasing
-code. Failed cleanup retains the library. Private workers and newly installed
-plugin IDs need separate protocols and acceptance work.
+code. Failed cleanup retains the library. Private workers need a separate protocol. New plugin IDs are now covered by
+the utility-package deployment described below.
 
 The runtime also includes an independently checked route to deliver the response
 inside the player's chat. Its server startup passes; the visible client UI and
@@ -53,3 +53,28 @@ TheIsland now uses recovered gameplay configuration while preserving the current
 world and character files. This does not represent a recovery of historical
 player saves, which were not available. Full server shutdown acceptance remains
 pending after the observed abort during stopping.
+
+
+## 14 October 2026 — first utility package and suite foundations
+
+The current build passes **153/153 CTest cases**, including real-library
+integration of ObeliskNative Essentials. It provides configurable `/help`,
+`/rules`, `/motd` and `/serverinfo`, help topics and opt-in case-insensitive
+argument routing. Existing exact command registrations retain their behavior.
+
+The actual server started with oPing alone. Essentials was then installed and
+started as a new plugin ID. Eleven successful operator requests exercised
+status, pause/resume, reload and stop/start without changing the game process.
+Both packages ended running. TheIsland and the current profile/configuration
+were preserved. The new utility replies still require an in-game client check.
+
+The private offline store now tests roles, explicit deny precedence, membership
+expiry, integral balances, transaction rollback, operation deduplication,
+concurrent connections and reopening persistence. It is not connected to live
+player authorization or purchases.
+
+An original inspect/dry-run migration tool passed **46 script tests** for copied
+Permissions/ArkShop configurations and offline databases. It reports unknown
+fields, integer conflicts and required identity/permission mappings, with
+redacted output by default. It does not apply data to a live server. Shop item
+delivery, homes, broadcasts and dino/structure/tribe actions remain future stages.

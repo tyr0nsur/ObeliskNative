@@ -5,7 +5,7 @@ of market share, revenue or full API coverage.
 
 | Metric | Verified result |
 | --- | --- |
-| Current automated CTest cases | 152 passed / 152 total |
+| Current automated CTest cases | 153 passed / 153 total |
 | Earlier command prototype baseline | 147 passed / 147 total |
 | Real client platform tested | Epic Games |
 | Tested client / native server versions | 361.8 / 361.7 |
@@ -19,8 +19,12 @@ of market share, revenue or full API coverage.
 | Broader lifecycle and clean shutdown validation | Pending |
 | Cooperative plugin management | 13 real-server requests; server process unchanged |
 | Plugin transitions exercised | Pause/resume, two reloads, stop/start and status |
-| Plugin generations loaded in the live test | 4; final generation running |
+| Earlier oPing control-run generations | 4; final generation running |
 | Direct chat reply presentation | Startup verified; real-client UI check pending |
+| Essentials hot installation/control | 11 real-server requests; game process unchanged |
+| Essentials utility commands | Real-library fixtures pass; in-game replies pending |
+| Offline permission/wallet foundation | Persistence, expiry, rollback and concurrency tested |
+| Migration inspection tests | 46 passed; inspect/dry-run only, no live apply |
 
 The real-client results currently cover one Epic player. Automated fixtures
 include separate command origins, but those fixtures do not replace a real
